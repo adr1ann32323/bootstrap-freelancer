@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-blanco:#fff;
+    --color-verde-menta:#1ABC9c;
+    --color-azul-oscuro:#2c3e50;
+    --font-family:"Montserrat", sans-serif;
+}
+.color{
+    color: var(--color-blanco);
+}
+
+.navbar-1{
+    background-color:var(--color-azul-oscuro);
+    padding-block: 1.5rem;
+    text-transform: uppercase !important;
+}
+
+.navbar-1-title{
+    font-size: 1.75em;
+    font-weight: 700;
+    color: var(--color-blanco);
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+.menu{
+    font-weight: 700 !important;
+    color: var(--color-blanco) !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu__button{
+    background-color: var(--color-verde-menta) !important;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-verde-menta);
+    padding-block: 12.5rem 6rem;
+    color: var(--color-blanco);
+}
+
+.inicio__img{
+    width: 15rem;
+    margin-bottom: 3rem;
+}
+
+.inicio__h1{
+    font-size: 4rem;
+    line-height: 3.5rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.inicio__div{
+    display: flex;
+    gap: 1rem;
+    margin: 1.25rem 0 1.5rem;
+    align-items: end;
+}
+
+.inicio_hr{
+    background-color: #ffffff;
+    width: 7.1rem ;
+    height: 0.25rem;
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.hr-bg{
+    background-color: var(--color-azul-oscuro);
+}
+
+.inicio__parrafo{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    margin-block: 0.5rem 0; 
+    text-align: center;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 6rem;
+}
+
+.portfolio_title{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+.portfolio__container{
+    max-width: 1320px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 0 2.5rem;
+}
+
+.portfolio__container_item{
+    max-width: 400px;
+    min-height: 289px;
+    width: 100%;
+    padding-inline: 0;
+    margin: 0;
+    position: relative;
+}
+
+.img-0{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.img-1{
+    opacity: 1;
+    border-radius: 0.5rem;
+}
+
+.img-0:hover{
+    opacity: 2;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
